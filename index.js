@@ -1,3 +1,4 @@
+const path = require('path');
 const ghost = require('ghost');
 
 ghost({

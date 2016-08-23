@@ -66,7 +66,8 @@ var config = env.getOrElseAll({
                 $default: 8080,
                 $aliases: ['PORT']
             }
-        }
+        },
+        logging: false
     }
 
 });

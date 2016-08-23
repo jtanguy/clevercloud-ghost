@@ -7,11 +7,11 @@ const Bluebird = require('bluebird');
 const AWS = require('aws-sdk-promise');
 const moment = require('moment');
 const readFileAsync = Bluebird.promisify(fs.readFile);
-const options = {};
+let options = {};
+let client = null;
 
 function CellarStore(config) {
     options = config;
-    client = null;
     if(validOptions(config)){
         client =  new AWS.S3({
             accessKeyId: config.accessKeyId,

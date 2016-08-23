@@ -7,11 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
-      "node": "^4.2.0"
+    "node": "^4.2.0"
   },
   "dependencies": {
-      "ghost": "^0.9.0",
-      "common-env": "^5.4.0"
+    "aws-sdk": "^2.5.2",
+    "aws-sdk-promise": "0.0.2",
+    "bluebird": "^3.4.1",
+    "common-env": "^5.4.0",
+    "ghost": "^0.9.0",
+    "moment": "^2.14.1"
   },
   "repository": {
     "type": "git",

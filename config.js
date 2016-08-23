@@ -40,7 +40,23 @@ var config = env.getOrElseAll({
                 charset  : 'utf8'
             }
         },
-
+        storage: {
+            active: 'cellar',
+            'cellar': {
+                accessKeyId: {
+                    $aliases: ['CELLAR_ADDON_KEY_ID']
+                },
+                secretAccessKey: {
+                    $aliases: ['CELLAR_ADDON_KEY_SECRET']
+                },
+                bucket: {
+                    $aliases: ['CELLAR_BUCKET']
+                },
+                region: {
+                    $aliases: ['CELLAR_ADDON_HOST']
+                }
+            }
+    },
         server: {
             host: '0.0.0.0',
             port: {

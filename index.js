@@ -1,5 +1,7 @@
 const ghost = require('ghost');
 
-ghost().then(function (ghostServer) {
+ghost({
+  config: path.join(__dirname, 'config.js')
+}).then(function (ghostServer) {
     ghostServer.start();
 });

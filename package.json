@@ -1,0 +1,26 @@
+{
+  "name": "devblog",
+  "version": "1.0.0",
+  "description": "Devblog using Ghost",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+      "node": "^4.2.0"
+  },
+  "dependencies": {
+      "ghost": "^0.9.0",
+      "common-env": "^5.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtanguy/devblog.git"
+  },
+  "author": "Julien Tanguy <julien.tanguy@jhome.fr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jtanguy/devblog/issues"
+  },
+  "homepage": "https://github.com/jtanguy/devblog#readme"
+}

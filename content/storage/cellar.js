@@ -36,7 +36,7 @@ function validOptions(opts) {
  * @return {String}        [path-style URL of the Cellar bucket]
  */
 function getCellarPath(bucket) {
-    var cellarPath = 'https://' + options.bucket + options.host + '/';
+    var cellarPath = 'https://' + options.bucket + '.' + options.host + '/';
     return cellarPath;
 }
 

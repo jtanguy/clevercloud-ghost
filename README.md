@@ -15,3 +15,6 @@ In order to setup an instance:
     - `CELLAR_BUCKET` The name of the cellar bucket to store your assets
     - `MAILGUN_SMTP_LOGIN` The SMTP login of your mailgun account
     - `MAILGUN_SMTP_PASSWORD` The SMTP password of your mailgun account
+
+4. Deploy
+5. Profit

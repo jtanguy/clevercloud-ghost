@@ -56,7 +56,10 @@ var config = env.getOrElseAll({
                     $aliases: ['CELLAR_ADDON_HOST']
                 }
             }
-    },
+        },
+        paths: {
+            contentPath: path.join(__dirname, 'content'),
+        },
         server: {
             host: '0.0.0.0',
             port: {

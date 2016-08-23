@@ -42,7 +42,7 @@ var config = env.getOrElseAll({
         },
         storage: {
             active: 'cellar',
-            'cellar': {
+            cellar: {
                 accessKeyId: {
                     $aliases: ['CELLAR_ADDON_KEY_ID']
                 },
@@ -52,7 +52,7 @@ var config = env.getOrElseAll({
                 bucket: {
                     $aliases: ['CELLAR_BUCKET']
                 },
-                region: {
+                host: {
                     $aliases: ['CELLAR_ADDON_HOST']
                 }
             }

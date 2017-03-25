@@ -50,6 +50,7 @@ var config = env.getOrElseAll({
                 }
             }
         },
+        fileStorage: false,
         storage: {
             active: 'cellar',
             cellar: {

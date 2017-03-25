@@ -1,7 +1,6 @@
 const path = require('path');
 const ghost = require('ghost');
 const express = require('express');
-const path = require('path');
 
 const wrapperApp = express();
 

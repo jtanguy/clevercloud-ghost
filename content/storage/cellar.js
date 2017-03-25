@@ -7,13 +7,14 @@ const Bluebird = require('bluebird');
 const AWS = require('aws-sdk-promise');
 const moment = require('moment');
 const util = require('util');
-const baseStore = require('ghost/core/server/storage/base');
+const StorageBase = require('ghost/core/server/storage/base');
 
 const readFileAsync = Bluebird.promisify(fs.readFile);
 let options = {};
 let client = null;
 
 function CellarStore(config) {
+    StorageBase.call(this);
     options = config;
     if(validOptions(config)){
         client =  new AWS.S3({
@@ -26,15 +27,14 @@ function CellarStore(config) {
     }
 }
 
-util.inherits(HTTPStore, baseStore);
-
-
 function validOptions(opts) {
     return (opts.accessKeyId &&
         opts.secretAccessKey &&
         opts.bucket &&
         opts.host);
 }
+
+util.inherits(CellarStore, StorageBase);
 
  /**
  * Return the URL where image assets can be read.
@@ -66,14 +66,38 @@ function getTargetName(image, targetDir) {
     return targetDir + name + '-' + Date.now() + ext;
 };
 
+CellarStore.prototype.exists = function(name){
+    if (client === null) {
+        return Bluebird.reject('ghost-cellar is not configured');
+    }
+    var params = {
+        Bucket: options.bucket,
+        Key: name.path.replace(/^\//, '')
+    };
+    client.headObjectAsync(params)
+        .then(() => true)
+        .catch(() => false)
+}
+
+CellarStore.prototype.delete = function(name){
+    if (client === null) {
+        return Bluebird.reject('ghost-cellar is not configured');
+    }
+    var params = {
+        Bucket: options.bucket,
+        Key: name.path.replace(/^\//, '')
+    };
+    client.deleteObjectAsync(params)
+        .then(() => true)
+        .catch(() => false)
+}
+
 CellarStore.prototype.save = function(image) {
     if (client === null) {
       return Bluebird.reject('ghost-cellar is not configured');
     }
-
     var targetDir = getTargetDir();
     var targetFilename = getTargetName(image, targetDir);
-
     return readFileAsync(image.path)
         .then(function(buffer) {
             var params = {
@@ -102,13 +126,14 @@ CellarStore.prototype.save = function(image) {
 
 // middleware for serving the files
 CellarStore.prototype.serve = function() {
-
+    if (client === null) {
+      return Bluebird.reject('ghost-cellar is not configured');
+    }
     return function (req, res, next) {
         var params = {
             Bucket: options.bucket,
             Key: req.path.replace(/^\//, '')
         };
-
         client.getObject(params)
             .on('httpHeaders', function(statusCode, headers, response) {
                 res.set(headers);

@@ -37,7 +37,17 @@ var config = env.getOrElseAll({
                 database : {
                     $aliases: ['POSTGRESQL_ADDON_DB']
                 },
-                charset  : 'utf8'
+                charset  : 'utf8',
+                pool: {
+                    min: {
+                        $aliases: ['POSTGRESQL_ADDON_MIN_CONNECTIONS'],
+                        $default: 1
+                    },
+                    max: {
+                        $aliases: ['POSTGRESQL_ADDON_MAX_CONNECTIONS'],
+                        $default: 4
+                    }
+                }
             }
         },
         storage: {

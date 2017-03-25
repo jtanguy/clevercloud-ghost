@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/jtanguy
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jtanguy.cleverapps.io
+  * I am jtanguy (https://keybase.io/jtanguy) on keybase.
+  * I have a public key with fingerprint D306 58EB 6067 735A A204  7239 70A2 176E 39C0 92F8
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101197b774355e0f1b365c49cb43ac336803f412a523688b510aa9018151e9f39820a",
+            "fingerprint": "d30658eb6067735aa204723970a2176e39c092f8",
+            "host": "keybase.io",
+            "key_id": "70a2176e39c092f8",
+            "kid": "0101197b774355e0f1b365c49cb43ac336803f412a523688b510aa9018151e9f39820a",
+            "uid": "3d14afbdf75a8d5669a16e102efb6b19",
+            "username": "jtanguy"
+        },
+        "service": {
+            "hostname": "jtanguy.cleverapps.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1490437496,
+    "expire_in": 157680000,
+    "prev": "e25fc01b67085725e71f6950520e13f1cc7ad0c14779fefb8e4a491f8131352c",
+    "seqno": 14,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.66
+Comment: https://keybase.io/crypto
+
+yMNGAnicrVJ/TFVlGL78lGAFbhQgA/FQyOYVz3d+nyuCYzCJppgmJUOu55z7netB
+OPd6zwHBG4kwgmYmCGMNlAyzREpSUXZJFzgEXDbojqHgCpkDGzE0I7gTGp1D9Udb
+f/b9833fu+d53ud59/a+6GMI9LK3hMls9ymP13c9ZwsN74ykFTsR3mYpQUxO5CBc
+uWC+BSqq+aBkQUwIClAAWJqnaQInSYiKgMcpUiBYgSdwTsBxikFxkQAYR2Lam+FJ
+gHIciwIGkACyIs4yGMohRkSUZCt02B2SrGqyFhylSAbyFErRNE5yHIYSNIazNMph
+gKYgzgooi4mMRjxgU3SGZo7nFJgg2bSa9jGv2PsP/P/su3BFDrcAghN5i0iTHGMh
+KYrlAAUBikGRp3jA6kAFOmSuAGroPJWTrYUlSKkR0YpFkgD1uepB/g1IEPJhEXRw
+drvyVy67w6baBFu+BjmgqnbFpEuoJXadcxjy5r/VzLwkW7R5agyNrkg2GTEBDSmo
+ki4PCBYlcJpgKSMCi+2SA5olHUHSWmjt6H1gkSYJMVIUUMBTNMqQNEZCGogUS6Ik
+hkKAi0AQaM6CCoCgaVbUkjKQ4AgWiAzAAU5iAqLnOyTb9JaaT86qaSqSVebUQgdE
+Sm/15PgavAIN/n7e+qIZAl8I+Wf9No4EL6sDzoX3HLtbk6U15cPPKv8wPIgOzzWc
+b8mNBybh0Ey3P/NrVUCKfGFwqjunYtvT+1eVnTfHF1qGGq3Phe2ZFyLP+VfPLZfQ
+Aas+mLsy15Wwx2dXy/EtY21d193Hol1GU9bsw8MDn8y7QjZf3XLL/dOVsrie08Np
+Ma0DTYtB9XLMnuxzdY96z4R/FVWajiw2iz3VsxG7vD9KbLt8IqvTuCa+/ebvq8fW
+bkKe+w3n1NXePhK6112dsXW+Y3TAk1FVu6Hg3YuuJ0ngYU7Vqcj+S1/MfzMUadrn
+vVh0o99eF1Q5G9r2VkOVXDEf15sUG/ry49LV0Zn1nr7UJOre1mPlvcnB64tH73Ws
+8toR4gIjbtNQx1L6/cmGyvqT6zxYe71r27ezJydaE8LaB23jHeOTFsVTmT4Vld3Y
+mRtwRImLNhv9jheM1tRdc//Ynxo88EpV/NqpwTtvbGjeOL3/afrb+Qa+57eYkPGF
+Bn8ubTLzaGwtefeXkvevvXq9yV1OTJz3/dl9dHHZKYwF5bF7+y7vLPN/Mj2z1B4T
+yPhu/rQs/0R3irPg7pw4l/js0oOKj7+eeH0mcipqKSWWdBb+cDa38XHz/pqazqDd
+WXl9cWEOzw2fuvqXcvzywKPpiM+bwjOW1a5NoevudPfORFz8MCXytJxQ+tmbZ9ZP
+pbrKi6y3qe1ffp+YvW/oteQd7j8BsmfGeg==
+=FeTK
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jtanguy
+
+==================================================================
+

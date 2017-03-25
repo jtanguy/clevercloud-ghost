@@ -6,6 +6,9 @@ const path = require('path');
 const Bluebird = require('bluebird');
 const AWS = require('aws-sdk-promise');
 const moment = require('moment');
+const util = require('util');
+const baseStore = require('ghost/core/server/storage/base');
+
 const readFileAsync = Bluebird.promisify(fs.readFile);
 let options = {};
 let client = null;
@@ -22,6 +25,9 @@ function CellarStore(config) {
         })
     }
 }
+
+util.inherits(HTTPStore, baseStore);
+
 
 function validOptions(opts) {
     return (opts.accessKeyId &&
